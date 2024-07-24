@@ -1,0 +1,16 @@
+lsflags="--color --group-directories-first -F"
+alias ls="ls ${lsflags}"
+alias cp="cp -i"	#Interactive
+alias df="df -h"
+alias free="free -m"
+alias vim=nvim
+alias bc="bc -l"
+# alias tlmgr='/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode'
+### Other options, but less different colors
+# alias cat="highlight -O ansi --force"
+alias cat="bat -pp"
+alias resetkeyboard='setxkbmap custom,dk -variant "nodeadkeys", -option "caps:escape", "grp:alt_space_toggle", "compose:menu", "shift:breaks_caps"'
+function open() {
+    xdg-open $* 2> /dev/null & disown
+}
+alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'

@@ -1,0 +1,39 @@
+import = ["/home/angryluck/.config/alacritty/colorthemes/catppuccin-mocha.toml"]
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[font]
+size = 10
+[font.normal]
+# family = "Inconsolata Nerd Font Mono"
+family = "0xProto Nerd Font Mono"
+style = "Regular"
+
+[keyboard]
+bindings = [
+    { key = "Return", mods = "Super|Shift", action = "SpawnNewInstance" },
+    { key = "Return", mods = "Control", chars = "\u001B[15;4u" }
+]
+# Alternative syntax:
+# ----------------------
+# [[keyboard.bindings]]
+# chars = "\u001B[15;4u"
+# key = "Return"
+# mods = "Control"
+#
+# [[keyboard.bindings]]
+# ...
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+
+[window]
+[window.padding]
+x = 0
+y = 5
+
+# [env]
+# TERM = "xterm-256color"

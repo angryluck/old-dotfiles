@@ -1,0 +1,1 @@
+PROMPT='%F{green}[%F{white}%B%3~%b%F{green}]%(!.#.$) %f'
