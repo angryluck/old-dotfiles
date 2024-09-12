@@ -10,39 +10,77 @@
 -- import qualified XMonad.Layout.Magnifier as Mag
 
 import Control.Arrow ((>>>))
+
+-- import XMonad.Util.Ungrab
+-- for using "unGrab"
+
+import Control.Monad (when)
 import Control.Monad.RWS (MonadWriter (pass))
 import Data.Function ((&))
+import qualified Data.Map as M
 import XMonad
 import XMonad.Actions.CycleRecentWS
 import XMonad.Actions.Promote
+import XMonad.Actions.SpawnOn
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.EwmhDesktops
-import XMonad.Hooks.ManageDocks (checkDock)
+import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.ManageHelpers
 import XMonad.Hooks.StatusBar
 import XMonad.Hooks.StatusBar.PP
 import XMonad.Layout.FixedColumn (FixedColumn (FixedColumn))
 import XMonad.Layout.LimitWindows (limitWindows)
 import XMonad.Layout.Magnifier (magnifiercz')
+import qualified XMonad.Layout.Magnifier as Mag
 import XMonad.Layout.MultiToggle
+import XMonad.Layout.MultiToggle as MT (Toggle (..))
 import XMonad.Layout.MultiToggle.Instances
 import XMonad.Layout.NoBorders
 import XMonad.Layout.Renamed (Rename (Replace), renamed)
 import XMonad.Layout.ResizableTile
 import XMonad.Layout.Spacing
 import XMonad.Layout.ThreeColumns
+import XMonad.ManageHook (composeAll)
+import XMonad.Operations
 import qualified XMonad.StackSet as W
 import XMonad.Util.EZConfig
 import XMonad.Util.Loggers
-
--- import XMonad.Util.Ungrab
-import XMonad.Operations -- for using "unGrab"
-
-import qualified XMonad.Layout.Magnifier as Mag
+import XMonad.Util.SpawnOnce
 
 ------------------------------------------------------------------------
--- Colors
+-- DistroTube settings (see https://gitlab.com/dwt1/dotfiles/-/blob/master/.config/xmonad/xmonad.hs?ref_type=heads)
+myFont :: String
+myFont = "Inconsolata" -- Need more specificity here
 
+myModMask :: KeyMask
+myModMask = mod4Mask -- super key
+
+myTerminal :: String
+myTermminal = "wezterm"
+
+myEditor :: String
+myEditor = myTerminal ++ "-e nvim"
+
+myBorderWidth :: Dimension
+myBorderWidth = 2
+
+-- myNormColor :: String
+-- myNormColor = colorBlack     -- Mangler 'Colors.THEME'!
+
+-- myFocusColor :: String
+-- myFocusColor = color15       -- Samme!
+
+-- Manger "colorRangeFromClassName"
+-- myColorizer :: Window -> Bool -> X (String, String)
+-- myColorizer =
+--     colorRangeFromClassName
+--         (0x28, 0x2c, 0x34) -- lowest inactive bg
+--         (0x28, 0x2c, 0x34) -- highest inactive bg
+--         (0xc7, 0x92, 0xea) -- active bg
+--         (0xc0, 0xa7, 0x9a) -- inactive fg
+--         (0x28, 0x2c, 0x34) -- active fg
+
+-- Colors
 grey1, grey2, grey3, grey4, cyan, orange :: String
 grey1 = "#2B2E37"
 grey2 = "#555E70"
@@ -56,7 +94,8 @@ myKeys :: [(String, X ())]
 myKeys =
     -- XMonad
     [ ("M-S-r", spawn "xmonad --restart")
-    , ("M-S-q", kill)
+    , -- , ("M-S-r", spawn "killall xmobar; xmonad --recompile; xmonad --restart")
+      ("M-S-q", kill)
     , -- MOVE THESET TO sxhkd
       ("<XF86MonBrightnessUp>", spawn "brillo -q -A 10")
     , ("<XF86MonBrightnessDown>", spawn "brillo -q -U 10")
@@ -95,6 +134,7 @@ myKeys =
     , ("M-0", spawn "rofi -show p -modi p:rofi-power-menu")
     , ("M-e", spawn "rofi modi emoji -show emoji")
     , ("M-o", spawn "firefox")
+    , ("C-M-l", spawn "slock")
     ]
 
 -- myTerminal = "kitty"
@@ -105,6 +145,20 @@ myRemovedKeys =
     , "M-q" -- Mapped to M-S-r instead
     , "M-S-<Return>" -- Mapped to new terminal in same directory
     ]
+
+myMouseBindings :: XConfig Layout -> M.Map (KeyMask, Button) (Window -> X ())
+myMouseBindings (XConfig{XMonad.modMask = modMask}) =
+    M.fromList
+        [
+            ( (modMask, button1)
+            , \w -> do
+                floats <- gets $ W.floating . windowset
+                when (w `M.member` floats) $ do
+                    focus w
+                    mouseMoveWindow w
+                    windows W.shiftMaster
+            )
+        ]
 
 shiftThenView i = W.shift i >>> W.greedyView i
 
@@ -161,6 +215,7 @@ myLayout = smartBorders $ mkToggle (single FULL) (tiled ||| threeCol)
 
 myWorkspaces :: [String]
 myWorkspaces = ["1: dev", "2: www", "3: doc", "4: read", "5", "6", "7: video", "8: music"]
+
 myXmobarPP :: PP
 myXmobarPP =
     def
@@ -172,11 +227,11 @@ myXmobarPP =
         , ppVisible = xmobarColor grey4 "" -- . clickable wsIconFull
         , ppVisibleNoWindows = Just (xmobarColor grey4 "") -- . clickable wsIconFull
         , ppHidden = xmobarColor "#FFFFFF" ""
-        , ppHiddenNoWindows = xmobarColor grey2 ""
-        , -- , ppHidden = white . wrap " " ""
-          -- , ppHiddenNoWindows = lowWhite . wrap " " ""
-          -- ppUrgent = red . wrap (yellow "!") (yellow "!")
-          ppUrgent = xmobarColor orange "" . wrap (yellow "!") (yellow "!")
+        , ppHiddenNoWindows = xmobarColor grey2 "" --
+        -- , ppHidden = white . wrap " " ""
+        -- , ppHiddenNoWindows = lowWhite . wrap " " ""
+        -- ppUrgent = red . wrap (yellow "!") (yellow "!")
+        , ppUrgent = xmobarColor orange "" . wrap (yellow "!") (yellow "!")
         , ppOrder = \[ws, l, _, wins] -> [ws, l, wins]
         , ppExtras = [logTitles formatFocused formatUnfocused]
         }
@@ -197,6 +252,21 @@ myXmobarPP =
     lowWhite = xmobarColor "#bbbbbb" ""
 
 -- TODO, see https://xmonad.org/TUTORIAL.html
+--
+
+doShiftAndView :: WorkspaceId -> ManageHook
+doShiftAndView ws = doF (W.greedyView ws) <+> doShift ws
+
+myManageHook =
+    composeAll
+        [ -- className =? "VirtualBox Machine" --> doShiftAndView "5"
+          title =? "Oracle VM VirtualBox Manager" --> doCenterFloat
+        , title =? "Oracle VM VirtualBox Manager" --> doShiftAndView "8"
+        , className =? "VirtualBoxVM" --> doFloat -- the little menu
+        , className =? "Bitwarden" --> doFloat
+        , className =? "Mozilla Firefox" --> doShiftAndView "2"
+        , return True --> doF W.swapDown
+        ]
 
 -- No type signature, but I should probably just remove this unecessary
 -- abstraction
@@ -212,14 +282,17 @@ myConfig =
           -- , workspaces = myWorkspaces
           focusFollowsMouse = myFocusFollowsMouse
         , clickJustFocuses = myClickJustFocuses
-        , -- , startupHook = myStartupHook
-          manageHook =
-            composeOne
-                [ checkDock -?> doIgnore -- equivalent to manageDocks
-                , isDialog -?> doFloat
-                , (className =? "albert") -?> doFloat
-                , return True -?> doF W.swapDown
-                ]
+        , mouseBindings = myMouseBindings
+        , manageHook = myManageHook <+> manageDocks
+        -- , startupHook = myStartupHook
+        -- manageHook =
+        --   composeOne
+        --       [ checkDock -?> doIgnore -- equivalent to manageDocks
+        --       , isDialog -?> doFloat
+        --       , (className =? "albert") -?> doFloat
+        --       , -- , (className =? "VirtualBox Machine") -?> doShift "5"
+        --         return True -?> doF W.swapDown
+        --       ]
         }
         `additionalKeysP` myKeys
         `removeKeysP` myRemovedKeys -- Remove certain defaults not needed.

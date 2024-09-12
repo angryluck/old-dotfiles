@@ -8,13 +8,19 @@
 <VirtualBox xmlns="http://www.virtualbox.org/" version="1.12-linux">
   <Global>
     <ExtraData>
-      <ExtraDataItem name="GUI/LastItemSelected" value="m=761dbdcd-b5d1-416a-8354-a6fcb2374cb3"/>
-      <ExtraDataItem name="GUI/LastWindowPosition" value="0,40,1920,1040"/>
-      <ExtraDataItem name="GUI/SuppressMessages" value="confirmInputCapture"/>
+      <ExtraDataItem name="GUI/Input/AutoCapture" value="true"/>
+      <ExtraDataItem name="GUI/LastItemSelected" value="m=40e79bc4-9464-4670-85a9-14a29f5be067"/>
+      <ExtraDataItem name="GUI/LastWindowPosition" value="492,32,936,1016"/>
+      <ExtraDataItem name="GUI/MaxGuestResolution" value="any"/>
+      <ExtraDataItem name="GUI/NotificationCenter/Alignment" value="Bottom"/>
+      <ExtraDataItem name="GUI/RecentFolderCD" value="/home/angryluck/nixos-virtualbox"/>
+      <ExtraDataItem name="GUI/RecentListCD" value="/home/angryluck/nixos-virtualbox/nixos-minimal-24.05.3214.575f3027caa1-x86_64-linux.iso"/>
+      <ExtraDataItem name="GUI/SoftKeyboardDialogGeometry" value="960,40,954,1034"/>
+      <ExtraDataItem name="GUI/SuppressMessages" value="confirmInputCapture,confirmGoingFullscreen,remindAboutMouseIntegration,remindAboutAutoCapture,confirmGoingSeamless,confirmGoingScale"/>
       <ExtraDataItem name="GUI/Tools/LastItemsSelected" value="Welcome,Details"/>
     </ExtraData>
     <MachineRegistry>
-      <MachineEntry uuid="{761dbdcd-b5d1-416a-8354-a6fcb2374cb3}" src="/home/angryluck/VirtualBox VMs/NixOS DEMO - 24.05.3164.63d37ccd2d17 (x86_64-linux)/NixOS DEMO - 24.05.3164.63d37ccd2d17 (x86_64-linux).vbox"/>
+      <MachineEntry uuid="{40e79bc4-9464-4670-85a9-14a29f5be067}" src="/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"/>
     </MachineRegistry>
     <NetserviceRegistry>
       <DHCPServers>
