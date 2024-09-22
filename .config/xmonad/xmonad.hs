@@ -133,6 +133,7 @@ myKeys =
       ("M-s", spawn "rofi -show file-browser-extended")
     , ("M-0", spawn "rofi -show p -modi p:rofi-power-menu")
     , ("M-e", spawn "rofi modi emoji -show emoji")
+    , ("M-c", spawn "rofi modi calc -show calc")
     , ("M-o", spawn "firefox")
     , ("C-M-l", spawn "slock")
     ]
@@ -259,10 +260,12 @@ doShiftAndView ws = doF (W.greedyView ws) <+> doShift ws
 
 myManageHook =
     composeAll
-        [ -- className =? "VirtualBox Machine" --> doShiftAndView "5"
+        [ -- className =? "VirtualBox Machine" --> doShift "5"
           title =? "Oracle VM VirtualBox Manager" --> doCenterFloat
         , title =? "Oracle VM VirtualBox Manager" --> doShiftAndView "8"
         , className =? "VirtualBoxVM" --> doFloat -- the little menu
+        , className =? "VirtualBoxVM" --> doShiftAndView "5" -- the little menu
+        , title =? "Extension: (Bitwarden Password Manager) - Bitwarden — Mozilla Firefox" --> doFloat
         , className =? "Bitwarden" --> doFloat
         , className =? "Mozilla Firefox" --> doShiftAndView "2"
         , return True --> doF W.swapDown

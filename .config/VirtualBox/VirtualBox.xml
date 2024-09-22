@@ -10,11 +10,12 @@
     <ExtraData>
       <ExtraDataItem name="GUI/Input/AutoCapture" value="true"/>
       <ExtraDataItem name="GUI/LastItemSelected" value="m=40e79bc4-9464-4670-85a9-14a29f5be067"/>
-      <ExtraDataItem name="GUI/LastWindowPosition" value="495,35,930,1010"/>
+      <ExtraDataItem name="GUI/LastWindowPosition" value="2,34,1536,832"/>
       <ExtraDataItem name="GUI/MaxGuestResolution" value="any"/>
       <ExtraDataItem name="GUI/NotificationCenter/Alignment" value="Bottom"/>
       <ExtraDataItem name="GUI/RecentFolderCD" value="/home/angryluck/nixos-virtualbox"/>
       <ExtraDataItem name="GUI/RecentListCD" value="/home/angryluck/nixos-virtualbox/nixos-minimal-24.05.3214.575f3027caa1-x86_64-linux.iso"/>
+      <ExtraDataItem name="GUI/Settings/ExpertMode" value="true"/>
       <ExtraDataItem name="GUI/SoftKeyboardDialogGeometry" value="960,40,954,1034"/>
       <ExtraDataItem name="GUI/SuppressMessages" value="confirmInputCapture,confirmGoingFullscreen,remindAboutMouseIntegration,remindAboutAutoCapture,confirmGoingSeamless,confirmGoingScale"/>
       <ExtraDataItem name="GUI/Tools/LastItemsSelected" value="Welcome,Details"/>

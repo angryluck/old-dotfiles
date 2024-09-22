@@ -1,19 +1,2 @@
-00:00:00.532719 VirtualBox GUI VM Selector Window 7.0.20 r163906 linux.amd64 (Jul 16 2024 13:33:48) release log
-00:00:00.532725 Log opened 2024-09-12T10:20:10.685426000Z
-00:00:00.532728 Build Type: release
-00:00:00.532732 OS Product: Linux
-00:00:00.532736 OS Release: 6.10.7-arch1-1
-00:00:00.532739 OS Version: #1 SMP PREEMPT_DYNAMIC Thu, 29 Aug 2024 16:48:57 +0000
-00:00:00.532785 DMI Product Name: ZenBook UX425IA_UM425IA
-00:00:00.532800 DMI Product Version: 1.0
-00:00:00.532809 Firmware type: UEFI
-00:00:00.532975 Secure Boot: Disabled
-00:00:00.533041 Host RAM: 15409MB (15.0GB) total, 11958MB (11.6GB) available
-00:00:00.533046 Executable: /usr/lib/virtualbox/VirtualBox
-00:00:00.533048 Process ID: 32186
-00:00:00.533051 Package type: LINUX_64BITS_GENERIC (OSE)
-00:00:00.533094 Qt version: 5.15.14
-00:00:00.535078 GUI: UIMediumEnumerator: Initial medium-enumeration finished!
-00:00:00.550952 GUI: UIMediumEnumerator: Medium-enumeration started...
-00:00:01.299286 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 0x40 x 1920x1040
-00:00:01.304902 GUI: UIMediumEnumerator: Medium-enumeration finished!
+01:42:51.991416 Log continuation - Log started 2024-09-22T10:34:24.827629000Z
+01:42:52.519070 GUI: UICommon: aboutToQuit request handled!

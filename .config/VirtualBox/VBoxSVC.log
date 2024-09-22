@@ -1,51 +1,112 @@
-00:00:00.001694 main     VirtualBox XPCOM Server 7.0.20 r163906 linux.amd64 (Jul 16 2024 13:33:48) release log
-00:00:00.001697 main     Log opened 2024-09-12T10:20:10.455418000Z
-00:00:00.001700 main     Build Type: release
-00:00:00.001703 main     OS Product: Linux
-00:00:00.001705 main     OS Release: 6.10.7-arch1-1
-00:00:00.001707 main     OS Version: #1 SMP PREEMPT_DYNAMIC Thu, 29 Aug 2024 16:48:57 +0000
-00:00:00.001736 main     DMI Product Name: ZenBook UX425IA_UM425IA
-00:00:00.001745 main     DMI Product Version: 1.0
-00:00:00.001752 main     Firmware type: UEFI
-00:00:00.001966 main     Secure Boot: Disabled
-00:00:00.002023 main     Host RAM: 15409MB (15.0GB) total, 11961MB (11.6GB) available
-00:00:00.002027 main     Executable: /usr/lib/virtualbox/VBoxSVC
-00:00:00.002029 main     Process ID: 32218
-00:00:00.002030 main     Package type: LINUX_64BITS_GENERIC (OSE)
-00:00:00.004093 main     IPC socket path: /tmp/.vbox-angryluck-ipc/ipcd
-00:00:00.119682 nspr-2   VirtualBox: object creation starts
-00:00:00.121492 nspr-2   Home directory: '/home/angryluck/.config/VirtualBox'
-00:00:00.122312 nspr-2   Loading settings file "/home/angryluck/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:00:00.128278 nspr-2   USB: Unknown USB device detected (idVendor: 0x8087, idProduct: 0x0029)
-00:00:00.128670 nspr-2   Successfully initialised host USB using sysfs
-00:00:00.144656 nspr-2   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlan0: VBoxNetAdpCtl: ioctl failed: Operation not supported
-00:00:00.147150 nspr-2   HostDnsMonitor: initializing
-00:00:00.147723 nspr-2   NAT: resolv.conf: nameserver 208.67.222.222
-00:00:00.147746 nspr-2   NAT: resolv.conf: nameserver 208.67.220.220
-00:00:00.147767 nspr-2   HostDnsMonitor: updating information
-00:00:00.147792 nspr-2   HostDnsMonitor: old information
-00:00:00.147797 nspr-2     no server entries
-00:00:00.147802 nspr-2     no domain set
-00:00:00.147806 nspr-2     no search string entries
-00:00:00.147811 nspr-2   HostDnsMonitor: new information
-00:00:00.147816 nspr-2     server 1: 208.67.222.222
-00:00:00.147821 nspr-2     server 2: 208.67.220.220
-00:00:00.147826 nspr-2     domain: unicph.domain
-00:00:00.147830 nspr-2     no search string entries
-00:00:00.152656 nspr-2   VD: VDInit finished with VINF_SUCCESS
-00:00:00.153669 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={aac6c7cb-a371-4c58-ab51-0616896b2f2c} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
-00:00:00.157916 nspr-2   Loading settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:00:00.159809 nspr-2   VirtualBox: object created
-00:00:01.034282 nspr-3   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:00:01.291639 nspr-5   Saving settings file "/home/angryluck/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:00:01.296105 nspr-5   Finished saving settings file "/home/angryluck/.config/VirtualBox/VirtualBox.xml"
-00:00:03.679035 nspr-3   Launched VM: 2617254928 pid: 32255 (0x7dff) frontend: GUI/Qt name: NixOS Manual Installation
-00:00:03.725968 nspr-4   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:00:04.104805 nspr-2   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:00:04.733327 nspr-7   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={70401eef-c8e9-466b-9660-45cb3e9979e4} aComponent={ExtPackManagerWrap} aText={No extension pack by the name 'Oracle VM VirtualBox Extension Pack' was found}, preserve=false aResultDetail=0
-00:00:04.797938 nspr-7   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:00:04.827250 nspr-2   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlan0: VBoxNetAdpCtl: ioctl failed: Operation not supported
-00:00:04.866421 nspr-2   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Starting)}, preserve=false aResultDetail=0
-00:00:05.197648 nspr-2   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
-00:00:05.199481 nspr-2   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
-00:00:05.264258 nspr-6   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:00:00.001826 main     VirtualBox XPCOM Server 7.1.0 r164728 linux.amd64 (Sep 11 2024 20:08:27) release log
+00:00:00.001830 main     Log opened 2024-09-22T10:34:24.565874000Z
+00:00:00.001832 main     Build Type: release
+00:00:00.001836 main     OS Product: Linux
+00:00:00.001837 main     OS Release: 6.10.10-arch1-1
+00:00:00.001840 main     OS Version: #1 SMP PREEMPT_DYNAMIC Thu, 12 Sep 2024 17:21:02 +0000
+00:00:00.001879 main     DMI Product Name: ZenBook UX425IA_UM425IA
+00:00:00.001887 main     DMI Product Version: 1.0
+00:00:00.001894 main     Firmware type: UEFI
+00:00:00.002102 main     Secure Boot: Disabled
+00:00:00.002160 main     Host RAM: 15409MB (15.0GB) total, 11076MB (10.8GB) available
+00:00:00.002165 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.002167 main     Process ID: 16706
+00:00:00.002168 main     Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.005655 main     IPC socket path: /tmp/.vbox-angryluck-ipc/ipcd
+00:00:00.038233 DCon01   VirtualBox: object creation starts
+00:00:00.039375 DCon01   Home directory: '/home/angryluck/.config/VirtualBox'
+00:00:00.040110 DCon01   Loading settings file "/home/angryluck/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:00.045198 DCon01   USB: Unknown USB device detected (idVendor: 0x8087, idProduct: 0x0029)
+00:00:00.045410 DCon01   Successfully initialised host USB using sysfs
+00:00:00.060658 DCon01   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlan0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:00.063108 DCon01   HostDnsMonitor: initializing
+00:00:00.063647 DCon01   NAT: resolv.conf: nameserver 8.8.4.4
+00:00:00.063666 DCon01   HostDnsMonitor: updating information
+00:00:00.063687 DCon01   HostDnsMonitor: old information
+00:00:00.063692 DCon01     no server entries
+00:00:00.063698 DCon01     no domain set
+00:00:00.063703 DCon01     no search string entries
+00:00:00.063708 DCon01   HostDnsMonitor: new information
+00:00:00.063713 DCon01     server 1: 8.8.4.4
+00:00:00.063719 DCon01     domain: home
+00:00:00.063724 DCon01     no search string entries
+00:00:00.067428 DCon01   VD: VDInit finished with VINF_SUCCESS
+00:00:00.068903 DCon01   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={925084b0-625f-422f-a67d-0ede1880a56c} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
+00:00:00.071012 DCon01   Platform architecture set to 'x86'
+00:00:00.071977 DCon01   Loading settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
+00:00:00.072526 DCon01   Platform architecture set to 'x86'
+00:00:00.073327 DCon01   VirtualBox: object created
+00:00:01.255701 DCon03   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is PoweredOff)}, preserve=false aResultDetail=0
+00:00:01.417819 DCon02   Saving settings file "/home/angryluck/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:01.422883 DCon02   Finished saving settings file "/home/angryluck/.config/VirtualBox/VirtualBox.xml"
+00:00:02.152741 DCon02   Launched VM: 2415926000 pid: 16744 (0x4168) frontend: GUI/Qt name: NixOS Manual Installation
+00:00:02.242376 DCon05   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is PoweredOff)}, preserve=false aResultDetail=0
+00:00:02.598159 DCon06   Platform architecture set to 'x86'
+00:00:02.614542 DCon01   Saving settings file "/home/angryluck/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:02.618797 DCon01   Finished saving settings file "/home/angryluck/.config/VirtualBox/VirtualBox.xml"
+00:00:02.632569 DCon04   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is PoweredOff)}, preserve=false aResultDetail=0
+00:00:03.261287 DCon08   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={70401eef-c8e9-466b-9660-45cb3e9979e4} aComponent={ExtPackManagerWrap} aText={No extension pack by the name 'Oracle VirtualBox Extension Pack' was found}, preserve=false aResultDetail=0
+00:00:03.342611 DCon08   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlan0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:03.418373 DCon03   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is Starting)}, preserve=false aResultDetail=0
+00:00:03.675782 DCon03   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={7d510820-a678-4730-a862-818dcd3fbed0} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
+00:00:03.677857 DCon03   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={7d510820-a678-4730-a862-818dcd3fbed0} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
+00:00:03.679849 DCon03   HostDnsMonitorProxy::GetDomainName: home
+00:00:03.680004 DCon03   HostDnsMonitorProxy::GetNameServers:
+00:00:03.680010 DCon03     name server 1: 8.8.4.4
+00:00:03.680159 DCon03   HostDnsMonitorProxy::GetSearchStrings:
+00:00:03.680164 DCon03     no search string entries
+00:00:03.773757 DCon08   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is Running)}, preserve=false aResultDetail=0
+00:54:58.886598 DCon93   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is Stopping)}, preserve=false aResultDetail=0
+00:54:58.896027 DCon93   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
+00:54:58.904570 DCon93   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
+00:54:58.906184 DCon102  ERROR [COM]: aRC=NS_ERROR_INVALID_ARG (0x80070057) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={SessionMachine} aText={Properties with TRANSIENT or TRANSRESET flag cannot be set or modified if VM is not running}, preserve=false aResultDetail=0
+00:54:58.954729 DCon115  ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is PoweredOff)}, preserve=false aResultDetail=0
+00:54:59.996141 DCon114  ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is PoweredOff)}, preserve=false aResultDetail=0
+00:55:01.656690 MainPower Host suspending: Paused 0 VMs
+00:55:05.326067 dns-monitor HostDnsMonitor: updating information
+00:55:05.326121 dns-monitor HostDnsMonitor: old information
+00:55:05.326128 dns-monitor   server 1: 8.8.4.4
+00:55:05.326134 dns-monitor   domain: home
+00:55:05.326138 dns-monitor   no search string entries
+00:55:05.326141 dns-monitor HostDnsMonitor: new information
+00:55:05.326145 dns-monitor   no server entries
+00:55:05.326149 dns-monitor   no domain set
+00:55:05.326153 dns-monitor   no search string entries
+00:55:05.333428 MainPower Host resumed: Resumed 0 VMs
+00:55:11.230093 dns-monitor NAT: resolv.conf: nameserver 8.8.4.4
+00:55:11.230140 dns-monitor HostDnsMonitor: updating information
+00:55:11.230150 dns-monitor HostDnsMonitor: old information
+00:55:11.230158 dns-monitor   no server entries
+00:55:11.230165 dns-monitor   no domain set
+00:55:11.230172 dns-monitor   no search string entries
+00:55:11.230179 dns-monitor HostDnsMonitor: new information
+00:55:11.230194 dns-monitor   server 1: 8.8.4.4
+00:55:11.230201 dns-monitor   domain: home
+00:55:11.230206 dns-monitor   no search string entries
+01:03:37.358681 DCon131  Launched VM: 920649968 pid: 21020 (0x521c) frontend: GUI/Qt name: NixOS Manual Installation
+01:03:37.455136 DCon136  ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is PoweredOff)}, preserve=false aResultDetail=0
+01:03:37.753252 DCon138  Platform architecture set to 'x86'
+01:03:37.778088 DCon142  ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is PoweredOff)}, preserve=false aResultDetail=0
+01:03:38.406693 DCon142  ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={70401eef-c8e9-466b-9660-45cb3e9979e4} aComponent={ExtPackManagerWrap} aText={No extension pack by the name 'Oracle VirtualBox Extension Pack' was found}, preserve=false aResultDetail=0
+01:03:38.487920 DCon142  NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlan0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+01:03:38.577359 DCon141  ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is Starting)}, preserve=false aResultDetail=0
+01:03:38.801546 DCon133  ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={7d510820-a678-4730-a862-818dcd3fbed0} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
+01:03:38.803087 DCon133  ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={7d510820-a678-4730-a862-818dcd3fbed0} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
+01:03:38.804566 DCon133  HostDnsMonitorProxy::GetDomainName: home
+01:03:38.804688 DCon133  HostDnsMonitorProxy::GetNameServers:
+01:03:38.804695 DCon133    name server 1: 8.8.4.4
+01:03:38.804815 DCon133  HostDnsMonitorProxy::GetSearchStrings:
+01:03:38.804821 DCon133    no search string entries
+01:03:38.911645 DCon140  ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is Running)}, preserve=false aResultDetail=0
+01:11:13.218012 DCon148  ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is Stopping)}, preserve=false aResultDetail=0
+01:11:13.228772 DCon148  Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
+01:11:13.233284 DCon148  Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
+01:11:13.234452 DCon148  ERROR [COM]: aRC=NS_ERROR_INVALID_ARG (0x80070057) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={SessionMachine} aText={Properties with TRANSIENT or TRANSRESET flag cannot be set or modified if VM is not running}, preserve=false aResultDetail=0
+01:11:13.278178 DCon148  ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is PoweredOff)}, preserve=false aResultDetail=0
+01:11:14.329899 DCon148  ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is PoweredOff)}, preserve=false aResultDetail=0
+01:42:57.304030 main     VirtualBox: object deletion starts
+01:42:57.304078 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={7d510820-a678-4730-a862-818dcd3fbed0} aComponent={MediumWrap} aText={Medium '/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+01:42:57.304810 main     HostDnsMonitor: shutting down ...
+01:42:57.317169 main     HostDnsMonitor: shut down
+01:42:57.341403 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d644ad1e-c501-4fc7-9ab6-aa6d763bc540} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+01:42:57.341471 main     VirtualBox: object deleted

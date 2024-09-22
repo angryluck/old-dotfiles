@@ -40,7 +40,7 @@ export PATH="/home/angryluck/.cargo/bin:$PATH"
 export PATH="/home/angryluck/.cargo/bin:$PATH"
 # export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
 export GHCUP_USE_XDG_DIRS=1
-export PATH="/home/angryluck/Isabelle2024/bin:$PATH"
+export PATH="/home/angryluck/isabelle/bin:$PATH"
 export PATH="/home/angryluck/.dotnet/tools:$PATH"
 
 # # Install Ruby Gems to ~/gems

@@ -1,331 +1,65 @@
-00:00:00.001685 main     VirtualBox XPCOM Server 7.0.20 r163906 linux.amd64 (Jul 16 2024 13:33:48) release log
-00:00:00.001689 main     Log opened 2024-09-11T11:49:24.851617000Z
-00:00:00.001691 main     Build Type: release
-00:00:00.001695 main     OS Product: Linux
-00:00:00.001696 main     OS Release: 6.10.7-arch1-1
-00:00:00.001699 main     OS Version: #1 SMP PREEMPT_DYNAMIC Thu, 29 Aug 2024 16:48:57 +0000
-00:00:00.001730 main     DMI Product Name: ZenBook UX425IA_UM425IA
-00:00:00.001739 main     DMI Product Version: 1.0
-00:00:00.001746 main     Firmware type: UEFI
-00:00:00.001910 main     Secure Boot: Disabled
-00:00:00.001960 main     Host RAM: 15409MB (15.0GB) total, 14767MB (14.4GB) available
-00:00:00.001964 main     Executable: /usr/lib/virtualbox/VBoxSVC
-00:00:00.001966 main     Process ID: 1769
-00:00:00.001967 main     Package type: LINUX_64BITS_GENERIC (OSE)
-00:00:00.003912 main     IPC socket path: /tmp/.vbox-angryluck-ipc/ipcd
-00:00:00.117279 nspr-2   VirtualBox: object creation starts
-00:00:00.119623 nspr-2   Home directory: '/home/angryluck/.config/VirtualBox'
-00:00:00.120700 nspr-2   Loading settings file "/home/angryluck/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:00:00.126221 nspr-2   USB: Unknown USB device detected (idVendor: 0x8087, idProduct: 0x0029)
-00:00:00.126654 nspr-2   Successfully initialised host USB using sysfs
-00:00:00.142893 nspr-2   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlan0: VBoxNetAdpCtl: ioctl failed: Operation not supported
-00:00:00.145469 nspr-2   HostDnsMonitor: initializing
-00:00:00.146117 nspr-2   NAT: resolv.conf: nameserver 208.67.222.222
-00:00:00.146139 nspr-2   NAT: resolv.conf: nameserver 208.67.220.220
-00:00:00.146159 nspr-2   HostDnsMonitor: updating information
-00:00:00.146187 nspr-2   HostDnsMonitor: old information
-00:00:00.146192 nspr-2     no server entries
-00:00:00.146198 nspr-2     no domain set
-00:00:00.146203 nspr-2     no search string entries
-00:00:00.146208 nspr-2   HostDnsMonitor: new information
-00:00:00.146213 nspr-2     server 1: 208.67.222.222
-00:00:00.146219 nspr-2     server 2: 208.67.220.220
-00:00:00.146225 nspr-2     domain: unicph.domain
-00:00:00.146230 nspr-2     no search string entries
-00:00:00.151262 nspr-2   VD: VDInit finished with VINF_SUCCESS
-00:00:00.152165 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={aac6c7cb-a371-4c58-ab51-0616896b2f2c} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
-00:00:00.156193 nspr-2   Loading settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:00:00.158098 nspr-2   VirtualBox: object created
-00:00:01.070344 nspr-3   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:00:01.912101 nspr-3   Launched VM: 1140860464 pid: 1803 (0x70b) frontend: GUI/Qt name: NixOS Manual Installation
-00:00:01.954372 nspr-4   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:00:02.373296 nspr-6   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:00:02.984706 nspr-2   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={70401eef-c8e9-466b-9660-45cb3e9979e4} aComponent={ExtPackManagerWrap} aText={No extension pack by the name 'Oracle VM VirtualBox Extension Pack' was found}, preserve=false aResultDetail=0
-00:00:03.109930 nspr-2   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:00:03.156412 nspr-6   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlan0: VBoxNetAdpCtl: ioctl failed: Operation not supported
-00:00:03.201394 nspr-6   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Starting)}, preserve=false aResultDetail=0
-00:00:03.525866 nspr-3   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
-00:00:03.528003 nspr-4   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
-00:00:03.593869 nspr-5   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:00:25.948442 nspr-5   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:00:25.967238 nspr-5   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:00:25.985130 nspr-6   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:00:27.916923 nspr-4   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:00:27.931509 nspr-4   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:00:27.959743 nspr-8   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:00:29.482959 nspr-6   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:00:29.493340 nspr-6   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:00:29.497500 nspr-6   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:00:29.516132 nspr-6   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:01:20.724184 nspr-4   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:01:20.735466 nspr-4   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:01:20.750730 nspr-4   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:01:20.759206 nspr-4   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:01:20.763765 nspr-4   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:01:20.773167 nspr-7   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:01:20.787931 nspr-7   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:01:30.766867 nspr-3   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:01:30.778938 nspr-8   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:01:30.821905 nspr-8   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:01:30.831641 nspr-4   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:01:30.836511 nspr-4   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:01:30.847091 nspr-4   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:01:30.857075 nspr-8   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:01:53.884456 nspr-6   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:01:53.896585 nspr-2   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:01:53.911965 nspr-2   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:01:53.925553 nspr-7   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:01:53.930229 nspr-7   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:01:53.952078 nspr-3   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:02:25.183735 nspr-6   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:02:25.201362 nspr-6   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:02:25.243972 nspr-6   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:02:25.251792 nspr-3   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:02:25.256644 nspr-3   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:02:25.274858 nspr-3   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:02:49.541821 nspr-6   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:02:49.552965 nspr-5   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:02:49.567439 nspr-5   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:02:49.575285 nspr-7   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:02:49.579275 nspr-7   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:02:49.589293 nspr-5   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:02:49.599843 nspr-5   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:04:14.622927 nspr-4   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Paused)}, preserve=false aResultDetail=0
-00:04:17.315771 nspr-4   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:04:17.331506 nspr-4   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:04:17.430980 nspr-8   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:04:19.438359 nspr-4   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Stopping)}, preserve=false aResultDetail=0
-00:04:19.498776 nspr-8   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:04:19.503051 nspr-8   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:04:19.521164 nspr-5   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:04:21.039528 nspr-6   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:04:23.341693 nspr-8   Launched VM: 1140861744 pid: 2636 (0xa4c) frontend: GUI/Qt name: NixOS Manual Installation
-00:04:23.384001 nspr-5   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:04:23.765209 nspr-3   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:04:24.387572 nspr-7   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={70401eef-c8e9-466b-9660-45cb3e9979e4} aComponent={ExtPackManagerWrap} aText={No extension pack by the name 'Oracle VM VirtualBox Extension Pack' was found}, preserve=false aResultDetail=0
-00:04:24.443788 nspr-3   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:04:24.470755 nspr-7   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlan0: VBoxNetAdpCtl: ioctl failed: Operation not supported
-00:04:24.514059 nspr-3   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Starting)}, preserve=false aResultDetail=0
-00:04:24.827221 nspr-4   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
-00:04:24.829198 nspr-4   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
-00:04:24.889538 nspr-4   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:07:19.436676 nspr-5   Saving settings file "/home/angryluck/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:07:19.479743 nspr-5   Finished saving settings file "/home/angryluck/.config/VirtualBox/VirtualBox.xml"
-00:07:19.521734 nspr-5   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:07:19.533441 nspr-5   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:07:19.538346 nspr-5   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:07:19.549893 nspr-4   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:07:19.554725 nspr-4   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:07:19.573741 nspr-2   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:07:34.236445 nspr-4   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:07:34.247112 nspr-4   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:07:34.290278 nspr-4   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:07:34.298664 nspr-2   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:07:34.303470 nspr-2   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:07:34.317608 nspr-4   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:07:34.329152 nspr-7   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:08:17.303241 nspr-5   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:08:17.314373 nspr-5   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:08:17.356387 nspr-5   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:08:17.364248 nspr-8   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:08:17.368628 nspr-8   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:08:17.381232 nspr-6   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:08:17.395620 nspr-6   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:08:38.510134 nspr-6   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:08:38.520956 nspr-6   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:08:38.563410 nspr-6   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:08:38.571887 nspr-8   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:08:38.576003 nspr-8   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:08:38.586611 nspr-4   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:08:38.598106 nspr-4   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:09:28.053023 nspr-6   Saving settings file "/home/angryluck/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:09:28.067817 nspr-6   Finished saving settings file "/home/angryluck/.config/VirtualBox/VirtualBox.xml"
-00:09:28.100285 nspr-5   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:09:28.114956 nspr-6   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:09:28.119522 nspr-6   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:09:28.133432 nspr-2   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:09:28.137696 nspr-2   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:09:28.159286 nspr-8   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:09:28.501275 nspr-7   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:09:28.516012 nspr-7   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:09:28.534762 nspr-2   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:09:31.421474 nspr-5   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:09:31.435059 nspr-8   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:09:31.449733 nspr-8   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:09:31.464762 nspr-8   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:09:31.469319 nspr-8   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:09:31.494022 nspr-2   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:09:36.270779 nspr-4   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:09:36.281380 nspr-3   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:09:36.290765 nspr-3   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:09:36.305409 nspr-4   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:09:36.309824 nspr-4   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:09:36.321531 nspr-7   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:09:36.624847 nspr-2   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:09:36.639669 nspr-2   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:09:36.657917 nspr-3   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:09:42.623646 nspr-9   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:09:42.633942 nspr-2   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:09:42.648822 nspr-2   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:09:42.660540 nspr-4   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:09:42.665036 nspr-4   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:09:42.683118 nspr-5   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:10:47.052883 nspr-6   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:10:47.100003 nspr-2   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:10:47.104553 nspr-2   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:10:47.117920 nspr-6   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:10:47.122422 nspr-6   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:10:47.139712 nspr-3   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:10:47.438989 nspr-2   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:10:47.454038 nspr-2   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:10:47.472546 nspr-6   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:10:49.810229 nspr-6   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:10:49.822776 nspr-4   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:10:49.837983 nspr-4   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:10:49.851653 nspr-6   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:10:49.856182 nspr-6   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:10:49.878287 nspr-9   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:11:00.390442 nspr-5   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Stopping)}, preserve=false aResultDetail=0
-00:11:00.447870 nspr-3   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:11:00.452185 nspr-3   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:11:00.472815 nspr-8   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:11:01.488346 nspr-8   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:11:04.407194 MainPower Host suspending: Paused 0 VMs
-00:11:06.267977 dns-monitor HostDnsMonitor: updating information
-00:11:06.268048 dns-monitor HostDnsMonitor: old information
-00:11:06.268217 dns-monitor   server 1: 208.67.222.222
-00:11:06.268228 dns-monitor   server 2: 208.67.220.220
-00:11:06.268236 dns-monitor   domain: unicph.domain
-00:11:06.268243 dns-monitor   no search string entries
-00:11:06.268250 dns-monitor HostDnsMonitor: new information
-00:11:06.268257 dns-monitor   no server entries
-00:11:06.268264 dns-monitor   no domain set
-00:11:06.268271 dns-monitor   no search string entries
-00:11:06.272889 MainPower Host resumed: Resumed 0 VMs
-00:11:13.354147 dns-monitor NAT: resolv.conf: nameserver 208.67.222.222
-00:11:13.354183 dns-monitor NAT: resolv.conf: nameserver 208.67.220.220
-00:11:13.354210 dns-monitor HostDnsMonitor: updating information
-00:11:13.354218 dns-monitor HostDnsMonitor: old information
-00:11:13.354225 dns-monitor   no server entries
-00:11:13.354231 dns-monitor   no domain set
-00:11:13.354236 dns-monitor   no search string entries
-00:11:13.354241 dns-monitor HostDnsMonitor: new information
-00:11:13.354246 dns-monitor   server 1: 208.67.222.222
-00:11:13.354252 dns-monitor   server 2: 208.67.220.220
-00:11:13.354257 dns-monitor   domain: unicph.domain
-00:11:13.354263 dns-monitor   no search string entries
-00:11:34.525915 MainPower Host suspending: Paused 0 VMs
-00:11:36.327323 dns-monitor HostDnsMonitor: updating information
-00:11:36.327378 dns-monitor HostDnsMonitor: old information
-00:11:36.327386 dns-monitor   server 1: 208.67.222.222
-00:11:36.327395 dns-monitor   server 2: 208.67.220.220
-00:11:36.327402 dns-monitor   domain: unicph.domain
-00:11:36.327409 dns-monitor   no search string entries
-00:11:36.327415 dns-monitor HostDnsMonitor: new information
-00:11:36.327421 dns-monitor   no server entries
-00:11:36.327428 dns-monitor   no domain set
-00:11:36.327434 dns-monitor   no search string entries
-00:11:36.332193 MainPower Host resumed: Resumed 0 VMs
-00:11:48.242071 dns-monitor NAT: resolv.conf: nameserver 208.67.222.222
-00:11:48.242115 dns-monitor NAT: resolv.conf: nameserver 208.67.220.220
-00:11:48.242135 dns-monitor HostDnsMonitor: updating information
-00:11:48.242144 dns-monitor HostDnsMonitor: old information
-00:11:48.242153 dns-monitor   no server entries
-00:11:48.242160 dns-monitor   no domain set
-00:11:48.242166 dns-monitor   no search string entries
-00:11:48.242174 dns-monitor HostDnsMonitor: new information
-00:11:48.242181 dns-monitor   server 1: 208.67.222.222
-00:11:48.242189 dns-monitor   server 2: 208.67.220.220
-00:11:48.242196 dns-monitor   domain: unicph.domain
-00:11:48.242203 dns-monitor   no search string entries
-00:23:16.249168 MainPower Host suspending: Paused 0 VMs
-00:23:18.132189 dns-monitor HostDnsMonitor: updating information
-00:23:18.132249 dns-monitor HostDnsMonitor: old information
-00:23:18.132256 dns-monitor   server 1: 208.67.222.222
-00:23:18.132266 dns-monitor   server 2: 208.67.220.220
-00:23:18.132272 dns-monitor   domain: unicph.domain
-00:23:18.132278 dns-monitor   no search string entries
-00:23:18.132285 dns-monitor HostDnsMonitor: new information
-00:23:18.132291 dns-monitor   no server entries
-00:23:18.132298 dns-monitor   no domain set
-00:23:18.132304 dns-monitor   no search string entries
-00:23:18.136290 MainPower Host resumed: Resumed 0 VMs
-00:23:26.422434 dns-monitor NAT: resolv.conf: nameserver 208.67.222.222
-00:23:26.422477 dns-monitor NAT: resolv.conf: nameserver 208.67.220.220
-00:23:26.422497 dns-monitor HostDnsMonitor: updating information
-00:23:26.422507 dns-monitor HostDnsMonitor: old information
-00:23:26.422515 dns-monitor   no server entries
-00:23:26.422522 dns-monitor   no domain set
-00:23:26.422529 dns-monitor   no search string entries
-00:23:26.422536 dns-monitor HostDnsMonitor: new information
-00:23:26.422543 dns-monitor   server 1: 208.67.222.222
-00:23:26.422550 dns-monitor   server 2: 208.67.220.220
-00:23:26.422557 dns-monitor   domain: unicph.domain
-00:23:26.422564 dns-monitor   no search string entries
-00:27:53.223824 nspr-4   Launched VM: 1140870416 pid: 7821 (0x1e8d) frontend: GUI/Qt name: NixOS Manual Installation
-00:27:53.261686 nspr-6   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:27:53.603178 nspr-8   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:27:54.222353 nspr-9   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={70401eef-c8e9-466b-9660-45cb3e9979e4} aComponent={ExtPackManagerWrap} aText={No extension pack by the name 'Oracle VM VirtualBox Extension Pack' was found}, preserve=false aResultDetail=0
-00:27:54.286958 nspr-8   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:27:54.316168 nspr-8   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlan0: VBoxNetAdpCtl: ioctl failed: Operation not supported
-00:27:54.358938 nspr-9   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Starting)}, preserve=false aResultDetail=0
-00:27:54.656809 nspr-9   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
-00:27:54.659041 nspr-3   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
-00:27:54.721361 nspr-2   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:28:33.786173 nspr-4   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:28:33.797497 nspr-5   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:28:33.812153 nspr-5   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:28:33.826019 nspr-7   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:28:33.830059 nspr-7   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:28:33.855389 nspr-8   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:28:34.150812 nspr-2   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:28:34.165504 nspr-2   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:28:34.185449 nspr-2   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:28:36.837646 nspr-2   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:28:36.849167 nspr-3   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:28:36.863747 nspr-3   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:28:36.875193 nspr-5   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:28:36.879325 nspr-5   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:28:36.898871 nspr-7   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:28:43.533641 nspr-6   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:28:43.545932 nspr-6   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:28:43.561314 nspr-6   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:28:43.574608 nspr-10  Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:28:43.578925 nspr-10  Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:28:43.600779 nspr-2   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:28:43.924638 nspr-9   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:28:43.939645 nspr-9   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:28:43.958387 nspr-9   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:28:44.469870 nspr-4   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:28:44.480733 nspr-2   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:28:44.495578 nspr-2   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:28:44.506280 nspr-10  Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:28:44.510428 nspr-10  Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:28:44.530267 nspr-9   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:28:55.532305 nspr-5   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:28:55.544381 nspr-3   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:28:55.559513 nspr-3   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:28:55.571067 nspr-9   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:28:55.575578 nspr-9   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:28:55.593516 nspr-4   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:28:55.921959 nspr-2   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:28:55.936822 nspr-2   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:28:55.957321 nspr-3   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:30:37.974001 nspr-4   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:30:37.986546 nspr-3   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:30:38.002023 nspr-3   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:30:38.013871 nspr-10  Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-00:30:38.018524 nspr-10  Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-00:30:38.027873 nspr-7   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:30:38.038703 nspr-7   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-01:00:07.148698 nspr-7   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Stopping)}, preserve=false aResultDetail=0
-01:00:07.222703 nspr-7   Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
-01:00:07.226791 nspr-7   Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
-01:00:07.248756 nspr-5   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-01:00:08.773421 nspr-5   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-01:00:23.836007 main     VirtualBox: object deletion starts
-01:00:23.836094 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
-01:00:23.836969 main     HostDnsMonitor: shutting down ...
-01:00:23.849232 main     HostDnsMonitor: shut down
-01:00:23.873391 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={7682d5eb-f00e-44f1-8ca2-99d08b1cd607} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
-01:00:23.873528 main     VirtualBox: object deleted
+00:00:00.001967 main     VirtualBox XPCOM Server 7.1.0 r164728 linux.amd64 (Sep 11 2024 20:08:27) release log
+00:00:00.001971 main     Log opened 2024-09-21T20:34:25.448381000Z
+00:00:00.001974 main     Build Type: release
+00:00:00.001977 main     OS Product: Linux
+00:00:00.001979 main     OS Release: 6.10.10-arch1-1
+00:00:00.001981 main     OS Version: #1 SMP PREEMPT_DYNAMIC Thu, 12 Sep 2024 17:21:02 +0000
+00:00:00.002016 main     DMI Product Name: ZenBook UX425IA_UM425IA
+00:00:00.002025 main     DMI Product Version: 1.0
+00:00:00.002032 main     Firmware type: UEFI
+00:00:00.002188 main     Secure Boot: Disabled
+00:00:00.002236 main     Host RAM: 15409MB (15.0GB) total, 12002MB (11.7GB) available
+00:00:00.002241 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.002243 main     Process ID: 6634
+00:00:00.002245 main     Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.005371 main     IPC socket path: /tmp/.vbox-angryluck-ipc/ipcd
+00:00:00.040324 DCon01   VirtualBox: object creation starts
+00:00:00.041518 DCon01   Home directory: '/home/angryluck/.config/VirtualBox'
+00:00:00.042351 DCon01   Loading settings file "/home/angryluck/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:00.047244 DCon01   USB: Unknown USB device detected (idVendor: 0x8087, idProduct: 0x0029)
+00:00:00.047498 DCon01   Successfully initialised host USB using sysfs
+00:00:00.059649 DCon01   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlan0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:00.061651 DCon01   HostDnsMonitor: initializing
+00:00:00.062090 DCon01   NAT: resolv.conf: nameserver 8.8.4.4
+00:00:00.062111 DCon01   HostDnsMonitor: updating information
+00:00:00.062135 DCon01   HostDnsMonitor: old information
+00:00:00.062140 DCon01     no server entries
+00:00:00.062146 DCon01     no domain set
+00:00:00.062151 DCon01     no search string entries
+00:00:00.062156 DCon01   HostDnsMonitor: new information
+00:00:00.062161 DCon01     server 1: 8.8.4.4
+00:00:00.062167 DCon01     domain: home
+00:00:00.062172 DCon01     no search string entries
+00:00:00.066684 DCon01   VD: VDInit finished with VINF_SUCCESS
+00:00:00.068187 DCon01   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={925084b0-625f-422f-a67d-0ede1880a56c} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
+00:00:00.070212 DCon01   Platform architecture set to 'x86'
+00:00:00.071897 DCon01   Loading settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
+00:00:00.072453 DCon01   Platform architecture set to 'x86'
+00:00:00.073334 DCon01   VirtualBox: object created
+00:00:01.295708 DCon03   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is PoweredOff)}, preserve=false aResultDetail=0
+00:00:01.440570 DCon03   Saving settings file "/home/angryluck/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:01.445258 DCon03   Finished saving settings file "/home/angryluck/.config/VirtualBox/VirtualBox.xml"
+00:00:04.903737 DCon03   Launched VM: 2080421616 pid: 6680 (0x1a18) frontend: GUI/Qt name: NixOS Manual Installation
+00:00:04.995796 DCon04   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is PoweredOff)}, preserve=false aResultDetail=0
+00:00:05.277255 DCon06   Platform architecture set to 'x86'
+00:00:05.308355 DCon06   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is PoweredOff)}, preserve=false aResultDetail=0
+00:00:05.935429 DCon04   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={70401eef-c8e9-466b-9660-45cb3e9979e4} aComponent={ExtPackManagerWrap} aText={No extension pack by the name 'Oracle VirtualBox Extension Pack' was found}, preserve=false aResultDetail=0
+00:00:06.015191 DCon01   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlan0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:06.088651 DCon01   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is Starting)}, preserve=false aResultDetail=0
+00:00:06.369437 DCon01   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={7d510820-a678-4730-a862-818dcd3fbed0} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
+00:00:06.371238 DCon01   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={7d510820-a678-4730-a862-818dcd3fbed0} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
+00:00:06.373096 DCon01   HostDnsMonitorProxy::GetDomainName: home
+00:00:06.373247 DCon01   HostDnsMonitorProxy::GetNameServers:
+00:00:06.373253 DCon01     name server 1: 8.8.4.4
+00:00:06.373405 DCon01   HostDnsMonitorProxy::GetSearchStrings:
+00:00:06.373412 DCon01     no search string entries
+00:00:06.460650 DCon04   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is Running)}, preserve=false aResultDetail=0
+01:08:36.684192 DCon126  Saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox" with version "1.19-linux"
+01:08:36.693314 DCon126  Finished saving settings file "/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vbox"
+01:08:36.695117 DCon130  ERROR [COM]: aRC=NS_ERROR_INVALID_ARG (0x80070057) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={SessionMachine} aText={Properties with TRANSIENT or TRANSRESET flag cannot be set or modified if VM is not running}, preserve=false aResultDetail=0
+01:08:43.209354 main     VirtualBox: object deletion starts
+01:08:43.209420 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={7d510820-a678-4730-a862-818dcd3fbed0} aComponent={MediumWrap} aText={Medium '/home/angryluck/VirtualBox VMs/NixOS Manual Installation/NixOS Manual Installation.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+01:08:43.210397 main     HostDnsMonitor: shutting down ...
+01:08:43.210706 main     HostDnsMonitor: shut down
+01:08:43.231145 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d644ad1e-c501-4fc7-9ab6-aa6d763bc540} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+01:08:43.231279 main     VirtualBox: object deleted
